@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+<title>Miami-Dade Vibe Check</title>
+<link>https://github.com/juanky-mdd-digest/mdd-digest-feed</link>
+<description>A weekday rundown of west-central Miami-Dade (Westchester, Sweetwater, Kendall, Doral) and County Hall, with balanced coverage across outlets.</description>
+<language>en-us</language>
+<lastBuildDate>Sun, 11 Oct 2026 05:14:52 +0000</lastBuildDate>
+<itunes:author>Hark</itunes:author>
+<itunes:image href="https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/cover.jpg"/>
+<image><url>https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/cover.jpg</url><title>Miami-Dade Vibe Check</title><link>https://github.com/juanky-mdd-digest/mdd-digest-feed</link></image>
+<itunes:explicit>false</itunes:explicit>
+<itunes:block>Yes</itunes:block>
+<itunes:category text="News"/>
+</channel>
+</rss>
