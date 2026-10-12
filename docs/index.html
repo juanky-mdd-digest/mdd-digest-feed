@@ -144,7 +144,7 @@
             <p class="head__eyebrow">Episodes</p>
             <h2>Listen right here, newest first.</h2>
           </div>
-          <div class="cards">
+          <div class="cards" id="ep-list">
             <div>
               <h3>Miami-Dade Vibe Check: Monday, October 12</h3>
               <p><span class="pill">Oct 12, 2026</span> <span class="pill">7:26</span></p>
@@ -206,5 +206,22 @@
         });
       })();
     </script>
-  </body>
+  <script>
+(function(){
+  var FEED="https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/feed.xml";
+  function esc(s){var d=document.createElement('div');d.textContent=s||'';return d.innerHTML;}
+  function dur(s){if(!s)return'';var p=s.split(':').map(Number);while(p.length<3)p.unshift(0);var m=p[0]*60+p[1];return m+':'+String(p[2]).padStart(2,'0');}
+  fetch(FEED,{cache:'no-store'}).then(function(r){return r.text();}).then(function(t){
+    var x=new DOMParser().parseFromString(t,'application/xml');var items=x.getElementsByTagName('item');if(!items.length)return;
+    var html='';for(var i=0;i<items.length&&i<10;i++){var it=items[i];
+      var g=function(n){var e=it.getElementsByTagName(n)[0];return e?e.textContent:'';};
+      var enc=it.getElementsByTagName('enclosure')[0];var url=enc?enc.getAttribute('url'):'';
+      var d=new Date(g('pubDate'));var ds=isNaN(d)?'':d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'America/New_York'});
+      var du=it.getElementsByTagNameNS('*','duration')[0];
+      html+='<div><h3>'+esc(g('title'))+'</h3><p><span class="pill">'+esc(ds)+'</span> <span class="pill">'+esc(dur(du?du.textContent:''))+'</span></p><p>'+esc(g('description'))+'</p><audio class="x-audio" controls preload="none" src="'+esc(url)+'"></audio></div>';}
+    document.getElementById('ep-list').innerHTML=html;
+  }).catch(function(){});
+})();
+</script>
+</body>
 </html>
