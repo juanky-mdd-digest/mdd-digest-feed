@@ -13,6 +13,7 @@ import argparse, base64, datetime, email.utils, html, json, os, re, subprocess, 
 OWNER, REPO, BRANCH = "juanky-mdd-digest", "mdd-digest-feed", "main"
 RAW = f"https://raw.githubusercontent.com/{OWNER}/{REPO}/{BRANCH}"
 KEEP = 60
+OP3 = "https://op3.dev/e/"  # free open download analytics prefix (added Oct 12, 2026)
 TITLE = "Miami-Dade Vibe Check"
 DESC = ("A weekday rundown of west-central Miami-Dade (Westchester, Sweetwater, Kendall, Doral) "
         "and County Hall, with balanced coverage across outlets.")
@@ -74,6 +75,7 @@ def build_feed(items):
         '<itunes:explicit>false</itunes:explicit>', '<itunes:block>Yes</itunes:block>',
         '<itunes:category text="News"/>',
     ]
+    items = [re.sub(r'url="https://(?!op3\.dev/e/)', 'url="' + OP3, i) for i in items]
     parts += items
     parts += ['</channel>', '</rss>']
     return "\n".join(parts).encode()
@@ -89,7 +91,7 @@ def existing_items():
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--mp3"); ap.add_argument("--title"); ap.add_argument("--description", default="")
-    ap.add_argument("--date"); ap.add_argument("--init", action="store_true")
+    ap.add_argument("--date"); ap.add_argument("--init", action="store_true"); ap.add_argument("--refresh", action="store_true")
     a = ap.parse_args()
     here = os.path.dirname(os.path.abspath(__file__))
     if a.init:
@@ -100,6 +102,9 @@ def main():
             put_file("feed.xml", build_feed([]), "Create feed")
         if not a.mp3:
             print(f"{RAW}/feed.xml"); return
+    if a.refresh:
+        put_file("feed.xml", build_feed(existing_items()), "Feed: add OP3 analytics prefix")
+        print(f"{RAW}/feed.xml"); return
     date = a.date or datetime.date.today().isoformat()
     name = os.path.basename(a.mp3)
     rpath = f"episodes/{name}"
