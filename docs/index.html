@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Miami-Dade Vibe Check</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="hark.css" />
+    <link rel="stylesheet" href="hark-hero.css" />
+    <style>
+      .x-feed {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px;
+        margin: 12px 0;
+      }
+      .x-feed__url {
+        flex: 1 1 220px;
+        min-width: 0;
+        min-height: var(--tap);
+        box-sizing: border-box;
+        padding: 10px 14px;
+        border: 1px solid var(--stroke-primary);
+        border-radius: var(--r-s);
+        background: var(--fill-primary-on);
+        color: var(--text-primary);
+        font: var(--type-small);
+        font-family: "Geist Mono", monospace;
+        word-break: break-all;
+        user-select: all;
+      }
+      .x-feed button { cursor: pointer; }
+      .x-audio { display: block; width: 100%; margin-top: 12px; }
+      .x-cover { margin: 0; }
+      .x-cover img {
+        display: block;
+        width: 100%;
+        max-width: 420px;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: var(--r-l);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page" id="top">
+      <header class="nav glass" data-auto></header>
+      <main class="main">
+        <section class="hero">
+          <img class="hero__img" src="image-725f910f.png" alt="A wide boulevard in west Miami-Dade at sunrise" />
+          <div class="hero__copy">
+            <p class="hero__eyebrow">Weekday local-news podcast</p>
+            <h1>Miami-Dade Vibe Check</h1>
+            <p class="hero__sub">A 6–9 minute morning rundown of west-central Miami-Dade and County Hall, balanced across left, center and right outlets in English and Spanish.</p>
+            <p class="hero__meta">Westchester · Sweetwater · Kendall · Doral · Fontainebleau · Tamiami · FIU area</p>
+          </div>
+          <aside class="callout" aria-label="Next step">
+            <p class="callout__head"><span class="hark-mark" data-size="16"></span> Next step</p>
+            <p class="callout__lead"><strong>Subscribe in any podcast app.</strong> Paste the feed URL.</p>
+            <a class="btn" href="#subscribe">How to subscribe</a>
+          </aside>
+          <p class="hero__credit">West Miami-Dade at sunrise</p>
+        </section>
+
+        <section class="section" id="about" data-nav="About">
+          <div class="head">
+            <p class="head__eyebrow">About the show</p>
+            <h2>Dade stories first, with every outlet's lean in view.</h2>
+          </div>
+          <section class="stats">
+            <div class="stat"><span class="stat__fig">6–9 min</span><span class="stat__label">Per episode</span></div>
+            <div class="stat"><span class="stat__fig">8 am</span><span class="stat__label">Eastern, every weekday</span></div>
+          </section>
+          <div class="cards">
+            <div>
+              <h3>The rundown</h3>
+              <p>New episode every weekday at 8 am Eastern. Mondays cover the whole weekend.</p>
+              <p>Stories directly about Miami-Dade come first. State and federal news that affects the county closes each episode in <strong>“Beyond Dade, affecting Dade.”</strong></p>
+            </div>
+            <div>
+              <h3>Balanced coverage</h3>
+              <p class="quote">Every story shows its coverage split by outlet lean.</p>
+              <p>Ground News style: left, center and right, with blindspots flagged.</p>
+            </div>
+            <div>
+              <h3>Sources</h3>
+              <p>Axios Miami, WLRN, Miami Herald, el Nuevo Herald, Sun Sentinel, Local 10, NBC 6, CBS News Miami, 7News, Telemundo 51, Univision 23, America TeVe, Political Cortadito, Florida Politics, Florida Bulldog, Community News, Miami New Times, Diario Las Americas, Sayfie Review, and more.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="subscribe" data-nav="Subscribe">
+          <div class="head">
+            <p class="head__eyebrow">How to subscribe</p>
+            <h2>Copy the feed URL, paste it into your app.</h2>
+          </div>
+          <div class="pair">
+            <figure class="x-cover">
+              <img src="cover.jpg" alt="Miami-Dade Vibe Check show art" />
+            </figure>
+            <aside class="callout" aria-label="Feed URL">
+              <p class="callout__head">Podcast feed URL</p>
+              <p class="callout__lead"><strong>One URL works in almost every app.</strong></p>
+              <div class="x-feed">
+                <code class="x-feed__url" id="feed-url">https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/feed.xml</code>
+                <button class="btn" type="button" id="copy-feed" aria-live="polite">Copy URL</button>
+              </div>
+              <p class="fineprint">Or open it directly: <a class="link" href="https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/feed.xml" target="_blank" rel="noopener">feed.xml</a></p>
+            </aside>
+          </div>
+          <div class="steps">
+            <article class="step">
+              <div class="step__intro"><p class="step__num">01</p><p class="step__eyebrow">Apple Podcasts</p></div>
+              <div>
+                <h3>Follow a Show by URL</h3>
+                <p>Open the Library tab, tap the ••• menu at top right, choose “Follow a Show by URL”, and paste the feed URL.</p>
+              </div>
+            </article>
+            <article class="step">
+              <div class="step__intro"><p class="step__num">02</p><p class="step__eyebrow">Overcast, Pocket Casts, Castro and most others</p></div>
+              <div>
+                <h3>Add podcast by URL</h3>
+                <p>Find Add podcast or “Add URL”, then paste the feed URL.</p>
+              </div>
+            </article>
+            <article class="step">
+              <div class="step__intro"><p class="step__num">03</p><p class="step__eyebrow">Spotify</p></div>
+              <div>
+                <h3>Not supported</h3>
+                <p>Spotify does not accept private RSS feeds. Use another app.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="episodes" data-nav="Episodes">
+          <div class="head">
+            <p class="head__eyebrow">Episodes</p>
+            <h2>Listen right here, newest first.</h2>
+          </div>
+          <div class="cards">
+            <div>
+              <h3>Miami-Dade Vibe Check: Monday, October 12</h3>
+              <p><span class="pill">Oct 12, 2026</span> <span class="pill">7:26</span></p>
+              <p>A pocketbook Monday: the county raises bus and Metrorail fares 50 cents while Metromover stays free, the Sheriff disputes a record budget, and Angie Nixon campaigns in Sweetwater. Plus disabled-parking permit cancellations, school vouchers, the weekend after Hurricane Isaias, and what Amendment 3 would cost the county.</p>
+              <audio class="x-audio" controls preload="none" src="https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/episodes/2026-10-12-miami-dade-digest.mp3"></audio>
+            </div>
+            <div>
+              <h3>Welcome to Miami-Dade Vibe Check</h3>
+              <p><span class="pill">Oct 11, 2026</span> <span class="pill">0:36</span></p>
+              <p>A short test episode.</p>
+              <audio class="x-audio" controls preload="none" src="https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/episodes/2026-10-11-welcome.mp3"></audio>
+            </div>
+          </div>
+          <p class="fineprint">The full, always-current episode list lives in the <a class="link" href="https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/feed.xml" target="_blank" rel="noopener">podcast feed</a>.</p>
+        </section>
+      </main>
+      <footer class="foot">
+        <p>Narrated with an AI voice. Compiled from public local reporting.</p>
+        <nav aria-label="Back to sections" data-auto></nav>
+        <a class="badge" href="https://hark.com/" target="_blank" rel="noopener"><span class="hark-mark"></span><span>built by hark</span></a>
+      </footer>
+    </div>
+    <script src="hark.js"></script>
+    <script>
+      (function () {
+        var btn = document.getElementById("copy-feed");
+        var url = document.getElementById("feed-url").textContent.trim();
+        function done(ok) {
+          btn.textContent = ok ? "Copied" : "Select and copy";
+          setTimeout(function () { btn.textContent = "Copy URL"; }, 2000);
+        }
+        function fallback() {
+          var ta = document.createElement("textarea");
+          ta.value = url;
+          ta.setAttribute("readonly", "");
+          ta.style.position = "fixed";
+          ta.style.opacity = "0";
+          document.body.appendChild(ta);
+          ta.select();
+          var ok = false;
+          try { ok = document.execCommand("copy"); } catch (e) {}
+          document.body.removeChild(ta);
+          done(ok);
+        }
+        btn.addEventListener("click", function () {
+          var code = document.getElementById("feed-url");
+          var sel = window.getSelection();
+          var range = document.createRange();
+          range.selectNodeContents(code);
+          sel.removeAllRanges();
+          sel.addRange(range);
+          btn.textContent = "Copying…";
+          btn.setAttribute("data-copied", "true");
+          if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(url).then(function () { done(true); }, fallback);
+          } else {
+            fallback();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
