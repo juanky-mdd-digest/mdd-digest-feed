@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<channel>
+<title>Miami Sports Desk</title>
+<link>https://github.com/juanky-mdd-digest/mdd-digest-feed</link>
+<description>Daily morning roundup and 30-minute pregame drops for the Dolphins, Hurricanes, Heat, Panthers, Marlins, Inter Miami and FIU, built from the reporters who cover them.</description>
+<language>en-us</language>
+<lastBuildDate>Tue, 13 Oct 2026 03:59:26 +0000</lastBuildDate>
+<itunes:author>Hark</itunes:author>
+<itunes:image href="https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/sports/cover.jpg"/>
+<image><url>https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/sports/cover.jpg</url><title>Miami Sports Desk</title><link>https://github.com/juanky-mdd-digest/mdd-digest-feed</link></image>
+<itunes:explicit>false</itunes:explicit>
+<itunes:block>Yes</itunes:block>
+<itunes:category text="Sports"/>
+</channel>
+</rss>
