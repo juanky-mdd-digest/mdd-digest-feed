@@ -5,13 +5,14 @@
 <link>https://github.com/juanky-mdd-digest/mdd-digest-feed</link>
 <description>A weekday rundown of west-central Miami-Dade (Westchester, Sweetwater, Kendall, Doral) and County Hall, with balanced coverage across outlets.</description>
 <language>en-us</language>
-<lastBuildDate>Mon, 12 Oct 2026 14:17:36 +0000</lastBuildDate>
+<lastBuildDate>Tue, 13 Oct 2026 12:10:19 +0000</lastBuildDate>
 <itunes:author>Hark</itunes:author>
 <itunes:image href="https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/cover.jpg"/>
 <image><url>https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/cover.jpg</url><title>Miami-Dade Vibe Check</title><link>https://github.com/juanky-mdd-digest/mdd-digest-feed</link></image>
 <itunes:explicit>false</itunes:explicit>
 <itunes:block>Yes</itunes:block>
 <itunes:category text="News"/>
+<item><title>Miami-Dade Vibe Check: Tuesday, October 13</title><description>Commissioners bristle at the GTA 6 Vice City ad deal, campaign money and marina-lease stories heat up before Nov. 3, and the school tax referendum could decide teacher supplements. Plus a cockfighting bust, Knaus Berry Farm&#x27;s opening day, and state news touching Dade.</description><enclosure url="https://op3.dev/e/raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/episodes/2026-10-13-miami-dade-digest.mp3" length="3507020" type="audio/mpeg"/><guid isPermaLink="false">episodes/2026-10-13-miami-dade-digest.mp3</guid><pubDate>Tue, 13 Oct 2026 08:00:00 -0400</pubDate><itunes:duration>00:04:52</itunes:duration></item>
 <item><title>Miami-Dade Vibe Check: Monday, October 12</title><description>A pocketbook Monday: the county raises bus and Metrorail fares 50 cents while Metromover stays free, the Sheriff disputes a record budget, and Angie Nixon campaigns in Sweetwater. Plus disabled-parking permit cancellations, school vouchers, the weekend after Hurricane Isaias, and what Amendment 3 would cost the county.</description><enclosure url="https://op3.dev/e/raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/episodes/2026-10-12-miami-dade-digest.mp3" length="5363191" type="audio/mpeg"/><guid isPermaLink="false">episodes/2026-10-12-miami-dade-digest.mp3</guid><pubDate>Mon, 12 Oct 2026 08:00:00 -0400</pubDate><itunes:duration>00:07:26</itunes:duration></item>
 <item><title>Welcome to Miami-Dade Vibe Check</title><description>A short test episode. Weekday episodes start Monday at 8 am.</description><enclosure url="https://op3.dev/e/raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/episodes/2026-10-11-welcome.mp3" length="218592" type="audio/mpeg"/><guid isPermaLink="false">episodes/2026-10-11-welcome.mp3</guid><pubDate>Sun, 11 Oct 2026 08:00:00 -0400</pubDate><itunes:duration>00:00:36</itunes:duration></item>
 </channel>
