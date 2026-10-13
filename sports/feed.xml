@@ -5,12 +5,13 @@
 <link>https://github.com/juanky-mdd-digest/mdd-digest-feed</link>
 <description>Daily morning roundup and 30-minute pregame drops for the Dolphins, Hurricanes, Heat, Panthers, Marlins, Inter Miami and FIU, built from the reporters who cover them.</description>
 <language>en-us</language>
-<lastBuildDate>Tue, 13 Oct 2026 03:59:26 +0000</lastBuildDate>
+<lastBuildDate>Tue, 13 Oct 2026 04:29:07 +0000</lastBuildDate>
 <itunes:author>Hark</itunes:author>
 <itunes:image href="https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/sports/cover.jpg"/>
 <image><url>https://raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/sports/cover.jpg</url><title>Miami Sports Desk</title><link>https://github.com/juanky-mdd-digest/mdd-digest-feed</link></image>
 <itunes:explicit>false</itunes:explicit>
 <itunes:block>Yes</itunes:block>
 <itunes:category text="Sports"/>
+<item><title>Test: Miami Sports Desk is live</title><description>A short test episode. The first morning roundup drops at 7 AM ET.</description><enclosure url="https://op3.dev/e/raw.githubusercontent.com/juanky-mdd-digest/mdd-digest-feed/main/sports/episodes/2026-10-13-test.mp3" length="224972" type="audio/mpeg"/><guid isPermaLink="false">sports/episodes/2026-10-13-test.mp3</guid><pubDate>Tue, 13 Oct 2026 04:29:06 +0000</pubDate><itunes:duration>00:00:18</itunes:duration></item>
 </channel>
 </rss>
